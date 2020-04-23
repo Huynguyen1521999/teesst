@@ -1,4 +1,4 @@
-  <script>
+<script>
     function getLinkJSONtamgiac() {
         var a,b,c;
         a = document.getElementById("inputa").value;
@@ -6,12 +6,14 @@
         c = document.getElementById("inputc").value;
         window.open("api.php/checktamgiac/"+a+"/"+b+"/"+c);
     }
-    function getLinkJSONday() {
-        
-        window.open("api.php/checkday/"+a);
+    function getLinkJSONyear() {
+        var a,b,c;
+        a = document.getElementById("inputday").value;
+        b = document.getElementById("inputmonth").value;
+        c = document.getElementById("inputyear").value;
+        window.open("api.php/checkyear/"+a+"/"+b+"/"+c);
     }
 </script>
-
 <!DOCTYPE html>
 <html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
 <html>
@@ -31,11 +33,15 @@
     <input type="number" id="inputc" name="lname"><br>
     <input type ="button" name="OKE" value="Submit" onclick="getLinkJSONtamgiac()">
 </form>
-<h1>Ngày tiếp theo</h1>
+<h1>Nhập ngày tháng năm</h1>
 <form>
-    <label for="lname">Nhập năm</label><br>
+    <label for="fname">Ngày:</label><br>
+    <input type="number" id="inputday" name="fname"><br>
+    <label for="lname">Tháng:</label><br>
+    <input type="number" id="inputmonth" name="lname"><br>
+    <label for="lname">Năm:</label><br>
     <input type="number" id="inputyear" name="lname"><br>
-    <input type ="button" name="OKE" value="GETJSON" onclick="getLinkJSONday()">
+    <input type ="button" name="OKE" value="Submit" onclick="getLinkJSONyear()">
 </form>
 </body>
 </html>
