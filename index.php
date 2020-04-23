@@ -1,11 +1,8 @@
 <script>
     
     function getLinkJSONyear() {
-        var a,b,c;
-        a = document.getElementById("inputday").value;
-        b = document.getElementById("inputmonth").value;
-        c = document.getElementById("inputyear").value;
-        window.open("api.php/checkyear/"+a+"/"+b+"/"+c);
+     
+        window.open("api.php/checkyear);
     }
 </script>
 <!DOCTYPE html>
@@ -18,7 +15,7 @@
 </head>
 <body>
 
-<h1>Nhập ngày tháng năm</h1>
+<h1>Ngày tiếp theo</h1>
 <form>
     <label for="fname">Ngày:</label><br>
     <input type="number" id="inputday" name="fname"><br>
