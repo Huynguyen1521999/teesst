@@ -5,8 +5,9 @@
         a = document.getElementById("inputday").value;
         b = document.getElementById("inputmonth").value;
         c = document.getElementById("inputyear").value;
-        window.open("api.php/checkyear/"+a+"/"+b+"/"+c);
+        window.open("api.php/checkngayketiep/"+a+"/"+b+"/"+c);
     }
+
 </script>
 <!DOCTYPE html>
 <html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
