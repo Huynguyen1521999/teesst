@@ -33,7 +33,8 @@
 </form>
 <h1>Ngày tiếp theo</h1>
 <form>
-    
+    <label for="lname">Nhập năm</label><br>
+    <input type="number" id="inputyear" name="lname"><br>
     <input type ="button" name="OKE" value="GETJSON" onclick="getLinkJSONday()">
 </form>
 </body>
