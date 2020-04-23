@@ -13,11 +13,7 @@
         c = document.getElementById("inputyear").value;
         window.open("api-ngayketiep.php/checkngayketiep/"+a+"/"+b+"/"+c);
     }
-    function getData()
-    {
-        document.getElementById("txt_apijsonpt2").innerHTML = window.location.host +"/ptb2-php/api-tamgiac.php/checktamgiac/a/b/c";
-        document.getElementById("txt_apijsonngayketiep").innerHTML = window.location.host +"/ptb2-php/api-ngayketiep.php/checkngayketiep/day/month/year";
-    }
+  
 </script>
 <!DOCTYPE html>
 <html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
