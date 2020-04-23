@@ -9,9 +9,9 @@ class api extends restful_api {
         parent::__construct();
     }
 
-    function checkyear(){
+    function checkday(){
         if ($this->method == 'GET'){
-            $this->response(200, $this->getyear($this->params));
+            $this->response(200, $this->getday($this->params));
         }
     }
 
@@ -63,8 +63,8 @@ class api extends restful_api {
     {
         $date = "22-4-2020"
         $myDate = new DateTime($date);
-        $myDate->modify("+1 day");
-        echo $myDate->format("l, d, m, Y");
+        $myDate->modify("tomorrow");
+        echo $myDate->format("d, m, Y");
         
     }
 }
