@@ -1,8 +1,11 @@
 <script>
     
-    function getLinkJSONyear() {
-     
-        window.open("api.php/checkyear);
+   function getLinkJSONyear() {
+        var a,b,c;
+        a = document.getElementById("inputday").value;
+        b = document.getElementById("inputmonth").value;
+        c = document.getElementById("inputyear").value;
+        window.open("api.php/checkyear/"+a+"/"+b+"/"+c);
     }
 </script>
 <!DOCTYPE html>
